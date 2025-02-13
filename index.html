@@ -2,121 +2,89 @@
 <html lang="ne">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>BRP Mailo - साहित्यिक वेबसाइट</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brpmailo</title>
+    <link rel="icon" type="image/png" href="your-photo.png">
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
             margin: 0;
             padding: 0;
         }
-        /* अन्य CSS कोड */
-
-        .login-container {
-            position: fixed;
-            top: 20px;
-            right: 20px;
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
             background-color: white;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            padding: 15px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            z-index: 1000;
-            width: 300px;
-            display: none; /* Initially hide the login form */
-            font-size: medium;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        .login-container.active {
-            display: block; /* Show the login form when active */
+        .photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 20px auto;
+            display: block;
         }
-        .login-container h2 {
-            margin-top: 0;
+        h2 {
+            text-align: center;
+            color: #4CAF50;
         }
-        .login-container form {
-            display: flex;
-            flex-direction: column;
+        .content {
+            margin: 20px 0;
+            font-size: 18px;
         }
-        .login-container label {
-            margin-bottom: 5px;
+        .language-switch {
+            text-align: center;
+            margin-top: 20px;
         }
-        .login-container input[type="text"],
-        .login-container input[type="password"] {
-            padding: 8px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        .login-container input[type="submit"] {
+        .language-switch a {
+            padding: 10px 20px;
+            margin: 0 10px;
             background-color: #4CAF50;
             color: white;
-            padding: 10px;
-            border: none;
+            text-decoration: none;
             border-radius: 5px;
-            cursor: pointer;
         }
-        .login-container input[type="submit"]:hover {
+        .language-switch a:hover {
             background-color: #45a049;
-        }
-        .create-account-btn {
-            font-size: medium;
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            z-index: 1000;
         }
     </style>
 </head>
 <body>
-    <!-- अन्य HTML कोड -->
+    <header>
+        <h1>मेरो बारेमा</h1>
+    </header>
 
-    <button class="create-account-btn" onclick="toggleLoginForm()">Create Account</button>
+    <div class="container">
+        <img src="your-photo.png" alt="Your Photo" class="photo">
+        <h2>परिचय</h2>
+        <div class="content">
+            <p>मेरो व्यक्तिगत वेबसाइटमा स्वागत छ! म बाबुराम फुयाल, एक जोशिला विद्यार्थी र शिक्षक हुँ। म साहित्य, शिक्षा र प्रविधिका क्षेत्रमा अरूसँग ज्ञान साझा गर्न र उनीहरूलाई प्रेरित गर्न मन पराउँछु।</p>
+        </div>
+        
+        <h2>शिक्षा</h2>
+        <div class="content">
+            <p>मैले कम्प्युटर विज्ञानको क्षेत्रमा मेरो अध्ययन गरेको छु र साहित्य र शैक्षिक क्षेत्रमा गहिरो चासो राख्छु। म शैक्षिक सामग्री सिर्जना गर्न चाहन्छु जसले विद्यार्थीहरूलाई सशक्त पार्छ र उनीहरूको शैक्षिक यात्रा अघि बढाउँछ।</p>
+        </div>
 
-    <div class="login-container" id="loginForm">
-        <h2>खाता सिर्जना गर्नुहोस्</h2>
-        <form id="createAccountForm">
-            <label for="newUsername">प्रयोगकर्ता नाम:</label>
-            <input type="text" id="newUsername" name="username" required>
+        <h2>काम</h2>
+        <div class="content">
+            <p>म विभिन्न शैक्षिक परियोजनाहरूमा सक्रिय रूपमा संलग्न छु, जसमा शिक्षण, पाठ्यक्रम विकास र विद्यार्थीहरूलाई शैक्षिक सहयोग प्रदान गर्नु पर्दछ। म विश्वास गर्छु कि विद्यार्थीहरूलाई भविष्यका करियरका लागि आवश्यक ज्ञान र सीपको साथ सशक्त बनाउनु आवश्यक छ।</p>
+        </div>
 
-            <label for="newPassword">पासवर्ड:</label>
-            <input type="password" id="newPassword" name="password" required>
-
-            <label for="confirmPassword">पासवर्ड पुन: प्रविष्ट गर्नुहोस्:</label>
-            <input type="password" id="confirmPassword" name="confirmPassword" required>
-
-            <input type="submit" value="खाता सिर्जना गर्नुहोस्">
-        </form>
+        <div class="language-switch">
+            <a href="english-version.html">View in English</a>
+            <a href="nepali-version.html">View in Nepali</a> 
+        </div>
     </div>
-
-    <script>
-        function toggleLoginForm() {
-            var loginForm = document.getElementById('loginForm');
-            loginForm.classList.toggle('active');
-        }
-
-        document.getElementById('createAccountForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-
-            var username = document.getElementById('newUsername').value;
-            var password = document.getElementById('newPassword').value;
-            var confirmPassword = document.getElementById('confirmPassword').value;
-
-            if (password !== confirmPassword) {
-                alert('पासवर्ड मिल्दैन। कृपया पुनः प्रयास गर्नुहोस्।');
-                return;
-            }
-
-            // यहाँ तपाईंले यस जानकारीलाई सर्भरमा पठाउन सक्छौं।
-            // तपाईको बैक-एन्ड कोडले यो डेटा भण्डारण गर्नु पर्नेछ।
-
-            alert('खाता सफलतापूर्वक सिर्जना गरियो।');
-            document.getElementById('loginForm').classList.remove('active');
-        });
-    </script>
 </body>
 </html>
