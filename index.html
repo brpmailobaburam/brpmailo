@@ -1,92 +1,169 @@
 <!DOCTYPE html>
-<html lang="ne">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brpmailo</title>
-      <link rel="icon" type="image/png" href="b1.png">
+    <meta name="author" content="Brpmailo">
+    <title>About Brp Mailo</title>
+<link rel="icon" type="image/png" href="b1.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            text-align: center;
         }
         header {
-            background-color: #4CAF50;
+            background: linear-gradient(90deg, pink, blue);
             color: white;
-            text-align: center;
-            padding: 20px;
+            padding: 20px 10px;
+            font-size: 22px;
         }
-        .container {
-            width: 80%;
-            margin: 0 auto;
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin-top: 10px;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        section {
+            max-width: 800px;
+            margin: 40px auto;
             padding: 20px;
-            background-color: white;
+            background: white;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        .photo {
+        .profile {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+        .profile img {
             width: 150px;
             height: 150px;
             border-radius: 50%;
-            margin: 20px auto;
+            object-fit: cover;
+        }
+        .profile h1 {
+            font-size: 26px;
+            font-weight: bold;
+            font-family: 'Cursive', sans-serif;
+        }
+        button {
             display: block;
-        }
-        h2 {
-            text-align: center;
-            color: #4CAF50;
-        }
-        .content {
-            margin: 20px 0;
-            font-size: 18px;
-        }
-        .language-switch {
-            text-align: center;
-            margin-top: 20px;
-        }
-        .language-switch a {
-            padding: 10px 20px;
-            margin: 0 10px;
+            margin: 15px auto;
             background-color: #4CAF50;
             color: white;
-            text-decoration: none;
+            padding: 12px 25px;
+            border: none;
             border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
         }
-        .language-switch a:hover {
-            background-color: #45a049;
+        button:hover {
+            background-color: #388E3C;
+        }
+        .hidden {
+            display: none;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            width: 100%;
+            margin-top: 40px;
+        }
+        footer a {
+            color: yellow;
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>मेरो बारेमा</h1>
+        <h1>Welcome About Me Page</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Home</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
- <div class="language-switch">
-            <a href="english-version.html">View in English</a>
-            <a href="nepali-version.html">View in Nepali</a> 
-        </div>
-    <div class="container">
-        <img src="your-photo.png" alt="Your Photo" class="photo">
-        <h2>परिचय</h2>
-        <div class="content">
-            <p>मेरो व्यक्तिगत वेबसाइटमा स्वागत छ! म बिआरपी माइलो, एक जोशिला विद्यार्थी र शिक्षक हुँ। म साहित्य, शिक्षा र प्रविधिका क्षेत्रमा अरूसँग ज्ञान साझा गर्न र उनीहरूलाई प्रेरित गर्न मन पराउँछु।</p>
-        </div>
-        
-        <h2>शिक्षा</h2>
-        <div class="content">
-            <p>मैले कम्प्युटर विज्ञानको क्षेत्रमा मेरो अध्ययन गरेको छु र साहित्य र शैक्षिक क्षेत्रमा गहिरो चासो राख्छु। म नेपाली भाषा साहित्यमा स्नातक तह अध्ययन गरिरहेको हुनाले साहित्यिक रचनाहरु कोर्ने प्रयास गर्छु । 
-                म शैक्षिक सामग्री सिर्जना गर्न चाहन्छु जसले विद्यार्थीहरूलाई सशक्त पार्छ र उनीहरूको शैक्षिक यात्रा अघि बढाउँछ।</p>
-        </div>
 
-        <h2>काम</h2>
-        <div class="content">
-            <p>म विभिन्न शैक्षिक परियोजनाहरूमा सक्रिय रूपमा संलग्न छु। जसमा वेब डिजाइन, शिक्षण र साहित्य  पर्दछन्। </p>
+    <section id="about">
+        <div class="profile">
+            <img src="b.jpg" alt="Brpmailo">
+            <h1>Brp Mailo</h1>
         </div>
-
+        <h2>About Me</h2>
+        <p>"Hi, Namaste! I am Brp Mailo. A literary figure, teacher, and web designer from Nepal. Click here to read more about me!"</p>
        
-    </div>
+ <button onclick="showDetails()">Click Me!</button>
+        <div id="extra-info" class="hidden">
+            
+<p>I am Brp Mailo. I am a literary figure, teacher, and web designer from Nepal. I have a deep passion for preserving the Nepali language and actively work in literature, especially in Ghazals and novels.
+I am currently pursuing a bachelor's degree in Nepali literature in the Faculty of Education at Tribhuvan University. Along with my studies, I also work as a social teacher and computer operator at Lovely Angels English Boarding School.
+Besides teaching, I have created a website (baburamphuyal.com.np) where I provide notes, curriculum, teacher guides, and literary content for students. I am also a skilled web designer and have designed and sold over 10 web templates.
+Apart from literature and teaching, I run a YouTube channel called "Hamro Computer Guru," where I teach computer-related topics. I am currently working on designing a book for my Ghazals.
+I am well-liked by the youth for my contributions to Nepali literature. My Ghazals are often inspired by my personal experiences, including past relationships, though I take them in a fun and lighthearted way.
+I strongly believe in discipline and integrity, especially in education, and I do not support cheating in exams. Currently, I am also focused on creating videos covering all Excel commands.</p>
+
+            <h3>My Qualifications</h3>
+            <p>Bachelor's Degree in Education</p>
+            <p>Certified Basic Level Teacher</p>
+ 	  <p>Writer & Author</p>
+	  <p>Web Designer </p>
+	  <p>YouTuber</p>
+
+
+<h3>Social Links</h3>           
+ <p><a href="https://facebook.com" target="_blank">Facebook</a></p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>📞 Phone: +977-9844078996</p>
+        <p>📧 Email: brpmailo2061@gmail.com</p>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Designer All rights reserved.</p>
+        <p>Website Design by <a href="https://baburamphuyal.com.np" target="_blank">Brpmailo</a></p>
+    </footer>
+
+    <script>
+        function showDetails() {
+            document.getElementById("extra-info").classList.toggle("hidden");
+        }
+    </script>
 </body>
 </html>
