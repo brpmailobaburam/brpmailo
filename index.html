@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Brpmailo">
     <title>About Brp Mailo</title>
-<link rel="icon" type="image/png" href="b.jpg">
+    <link rel="icon" type="image/png" href="b.jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         * {
@@ -96,7 +96,7 @@
             color: yellow;
             text-decoration: none;
         }
-.social-links {
+        .social-links {
             display: flex;
             justify-content: center;
             gap: 20px;
@@ -109,7 +109,7 @@
             transition: 0.3s;
         }
         .social-links a:hover {
-            color: blue; 
+            color: blue;
         }
     </style>
 </head>
@@ -124,9 +124,6 @@
         </nav>
     </header>
 
-
-
-
     <section id="about">
         <div class="profile">
             <img src="a.jpg" alt="Brpmailo">
@@ -134,39 +131,47 @@
         </div>
         <h2>About Me</h2>
         <p>"Hi, Namaste! I am Brp Mailo. A literary figure, teacher, and web designer from Nepal. Click here to read more about me!"</p>
-       
- <button onclick="showDetails()">Click Me!</button>
-        <div id="extra-info" class="hidden">
-            
-<p>I am Brp Mailo. I am a literary figure, teacher, and web designer from Nepal. I have a deep passion for preserving the Nepali language and actively work in literature, especially in Ghazals and novels.
+
+        <!-- English Button -->
+        <button onclick="showDetails('english')">Click Me!</button>
+
+        <div id="extra-info-english" class="hidden">
+            <p>I am Brp Mailo. I am a literary figure, teacher, and web designer from Nepal. I have a deep passion for preserving the Nepali language and actively work in literature, especially in Ghazals and novels.
 I am currently pursuing a bachelor's degree in Nepali literature in the Faculty of Education at Tribhuvan University. Along with my studies, I also work as a social teacher and computer operator at Lovely Angels English Boarding School.
 Besides teaching, I have created a website (baburamphuyal.com.np) where I provide notes, curriculum, teacher guides, and literary content for students. I am also a skilled web designer and have designed and sold over 10 web templates.
 Apart from literature and teaching, I run a YouTube channel called "Hamro Computer Guru," where I teach computer-related topics. I am currently working on designing a book for my Ghazals.
 I am well-liked by the youth for my contributions to Nepali literature. My Ghazals are often inspired by my personal experiences, including past relationships, though I take them in a fun and lighthearted way.
 I strongly believe in discipline and integrity, especially in education, and I do not support cheating in exams. Currently, I am also focused on creating videos covering all Excel commands.</p>
-
-          <h3><span style="color: Red;">My Qualifications</span></h3>
+            <h3><span style="color: Red;">My Qualifications</span></h3>
             <p>Bachelor's Degree in Education</p>
             <p>Certified Basic Level Teacher</p>
- 	  <p>Writer & Author</p>
-	  <p>Web Designer </p>
-	  <p>Computer Operator </p>
-	  <p>YouTuber</p>
-            </div>
+            <p>Writer & Author</p>
+            <p>Web Designer</p>
+            <p>Computer Operator</p>
+            <p>YouTuber</p>
+        </div>
 
+        <!-- Nepali Button -->
+        <button onclick="showDetails('nepali')">बारेमा</button>
 
-
-
- <h3>Social Links</h3>
-        <div class="social-links">
-            <a href="http://www.youtube.com/@nabinvlogdream" target="_blank"><i class="fab fa-youtube"></i></a>
-            <a href="http://www.tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
-            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <div id="extra-info-nepali" class="hidden">
+            <p><u><b>लेखकको भनाइ</b></u><br>अहिलेको बिज्ञान र प्रविधिको युगमा कुनै अरु पुराना विकल्प भन्दा यो विकल्प अलिक फरक र उपयुक्त लाग्यो र यो साइट निर्माण गरेको छु । 
+आफैमा विश्वास गर्छु कि यहि साइट मार्फत मेरा साहित्यिक रचनाहरु  सम्पूर्ण पाठक वर्गमा पुर्याउने छु । लेख्न थालेको धेरै त भएको छैन । तर पनि प्रयास गरेको भने कक्षा ५ मा अध्ययन गर्दादेखि नै हो ।  सफल हुने सूत्रहरु त धेरै हुन्छन्  । तर कस्तो सूत्र प्रयोग गरेर सफल हुने भनेर निर्णय गर्ने जिम्मा तपाईको हो  । 
+मेरो पनि त्यस्तै तपाईको जस्तै कथा छ  ।  <br><br>साहित्य मान्छेको जीवनको अभिन्न अङ्ग हो ।   मान्छेको जन्म संगै साहित्यको पनि जन्म हुन्छ । जन्म, मृत्यु, रोदन, हाँसखेल, दुख पिडा, हर्ष उल्लास, माया, ममता, संघर्ष, मिहिनेत, असफल, सफलता आदिको संयोजन नै वास्तबमा साहित्य हो । त्यसलाई बिभिन्न प्रकृयाद्वारा प्रस्तुत गरिन्छ ।   <br> <br>
+जीवनमा मान्छेहरु प्रयास गरेर थाक्ने गर्छन्  । तर मलाई लाग्छ प्रयास भनेको थकानको जन्म हैन  । प्रयासबाट त मानिसले जीवन खोजेका हुन्छन्  । आफ्ना लक्ष्य, भविष्य, दुनियाँ, संसार र अनगिन्ति  आशाको  दीप खोजेका हुन्छन्  ।
+आगोको ज्वाला झैँ दनदन दन्किरहेको आशाका किरणहरु अझै चम्काउन खोजिरहेका हुन्छन् । हो ति सबै कुण्ठाहरू फुत्त बाहिर निकाल्नु पर्छ । जस्तो  पर्याप्त श्रोत साधन भएर पनि उपयोग गर्न नजान्दा त्यो श्रोत भएको र नभएको कुनै फरक अर्थ हुदैन । त्यस्तै आफुमा भएको प्रतिभाआफैले प्रस्तुत गर्नु पर्दछ । नत्र कुनै अर्थ हुदैन ।
+मैले यस्तै यस्तै कुराहरु समावेश गरेर यो साहित्यिक वेबसाइट तयार गरेको छु । यहाँ यस्तै तपाइको कथा लेखिएको छ । तपाइको समाजको, तपाइको बा आमाको, तपाईका असल छिमेकीको, तपाईका दुश्मनको, तपाईलाई माया गर्ने मान्छेको र तपाइले माया गर्ने मान्छे सबै सबैको कथा प्रस्तुत गरिएको छ । 
+लेख्दा लेख्दै तपाइँ छुट्नु भएको, तपाइले चाहेको मान्छे छुटेको तथा तपाइको समाज छुटेको रहेछ भने आसा छ अवस्य मलाई जानकारी गराउनुहुनेछ ।   <br><br>
+तपाईहरुको सुझाब र सल्लाहको ठुलो अपेक्षा गरेको छु । सधै भरि म तपाईहरु पाठक प्रति सचेत रहेको छु, र रही रहने बाचा गर्दछु। तपाइहरुले साहित्यलाई मन पराइदिंदा मात्र हैन  पढेर गल्ति औल्दियाइदिदा पनि सारै खुसि लाग्छ ।यो तपाई पाठकवर्गले निभाउनुपर्ने एउटा कर्तव्य पनि हो जस्तो लाग्छ ।
+तपाईका सुझावले अरु लेखनमा थप हौसला मिलोस् र लेख्दा लेख्दै तपाईहरुको सुझावले घच्घच्याई रहोस् । सुधारगर्ने मौका मिलिरहोस् । तपाइहरुले  दिनुपर्ने पृष्ठपोषणको लागि यहि साईटको <b>लेखकको सम्पर्क</b>मा क्लिक गरि आफ्नो विवरण उल्लेख गरेर भन्न चाहेको कुरा लेखिदिनुहोला । 
+जसले गर्दा मलाई पछाडिका दिनहरुमा नया रचनाहरु ल्याउन मद्दत मिल्नेछ । थप सल्लाहा र सुझाबको लागि  हाम्रा अन्य</p>
+            <h3>परिचय </h3>
+            <p><b>बिआरपी माइलो</b>को जन्म खोटाङ जिल्ला साकेला गाउँपालिका रतन्छाको मबु भन्ने ठाउँमा बि.स.२०६१ सालमा भएको हो । सानै देखि साहित्यिक कुरा गरिरहने माइलो साहित्यको क्षेत्रमा निक्कै चर्तित बन्दै गइरहेका छन् ।
+उनि साहित्यका गजल, कविता, मुक्तक, कथा, निबन्ध तथा नाटक लेखन गर्ने गर्छन  । उनले गजल र मुक्तकमा भने निक्कै प्रभुत्त्व जमाई सकेका छन् भन्दा फरक पर्दैन । पठन संस्कृतिको अन्त्य नै भएको जस्तो लाग्ने समयमा पनि 
+युवाहरु भने उनका प्रेमिल गजलहरु भने पढ्ने र सुन्ने गर्छन् । ठूलो सोच नराख्ने बिआरपी माइलो सानै देखि शिक्षक बन्न चाहन्थे । नभन्दै उनि अहिले आफ्नो अध्ययन कार्यलाई निरन्तरता दिदै एउटा स्कुलमा 
+अध्यापन गराइरहेका छन् ।</p>
         </div>
     </section>
-
 
     <section id="contact">
         <h2>Contact Me</h2>
@@ -175,10 +180,8 @@ I strongly believe in discipline and integrity, especially in education, and I d
         <form id="contactForm">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
-            
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
-        
             <input type="submit" value="Submit">
         </form>
     </section>
@@ -189,8 +192,17 @@ I strongly believe in discipline and integrity, especially in education, and I d
     </footer>
 
     <script>
-        function showDetails() {
-            document.getElementById("extra-info").classList.toggle("hidden");
+        function showDetails(language) {
+            var englishInfo = document.getElementById("extra-info-english");
+            var nepaliInfo = document.getElementById("extra-info-nepali");
+
+            if (language === 'english') {
+                englishInfo.classList.toggle("hidden");
+                nepaliInfo.classList.add("hidden");
+            } else {
+                nepaliInfo.classList.toggle("hidden");
+                englishInfo.classList.add("hidden");
+            }
         }
     </script>
 </body>
