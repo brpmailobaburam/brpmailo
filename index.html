@@ -96,11 +96,26 @@
             color: yellow;
             text-decoration: none;
         }
+.social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            font-size: 24px;
+            margin-top: 10px;
+        }
+        .social-links a {
+            text-decoration: none;
+            color: #000;
+            transition: 0.3s;
+        }
+        .social-links a:hover {
+            color: blue; 
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome About Me Page</h1>
+        <h1> About Me</h1>
         <nav>
             <ul>
                 <li><a href="#about">Home</a></li>
@@ -109,9 +124,12 @@
         </nav>
     </header>
 
+
+
+
     <section id="about">
         <div class="profile">
-            <img src="a.JPG" alt="Brpmailo">
+            <img src="a.jpg" alt="Brpmailo">
             <h1>Brp Mailo</h1>
         </div>
         <h2>About Me</h2>
@@ -127,18 +145,28 @@ Apart from literature and teaching, I run a YouTube channel called "Hamro Comput
 I am well-liked by the youth for my contributions to Nepali literature. My Ghazals are often inspired by my personal experiences, including past relationships, though I take them in a fun and lighthearted way.
 I strongly believe in discipline and integrity, especially in education, and I do not support cheating in exams. Currently, I am also focused on creating videos covering all Excel commands.</p>
 
-            <h3>My Qualifications</h3>
+          <h3><span style="color: Red;">My Qualifications</span></h3>
             <p>Bachelor's Degree in Education</p>
             <p>Certified Basic Level Teacher</p>
  	  <p>Writer & Author</p>
 	  <p>Web Designer </p>
+	  <p>Computer Operator </p>
 	  <p>YouTuber</p>
+            </div>
 
 
-<h3>Social Links</h3>           
- <p><a href="https://facebook.com" target="_blank">Facebook</a></p>
+
+
+ <h3>Social Links</h3>
+        <div class="social-links">
+            <a href="http://www.youtube.com/@nabinvlogdream" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="http://www.tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
         </div>
     </section>
+
 
     <section id="contact">
         <h2>Contact Me</h2>
