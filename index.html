@@ -111,6 +111,33 @@
         .social-links a:hover {
             color: blue;
         }
+        .portfolio {
+            padding: 20px;
+        }
+        .portfolio-items {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .portfolio-item {
+            width: 300px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        .portfolio-item img:hover {
+            transform: scale(1.1);
+        }
+        .portfolio-item p {
+            font-size: 16px;
+            margin-top: 5px;
+        }
     </style>
 </head>
 <body>
@@ -126,7 +153,7 @@
 
     <section id="about">
         <div class="profile">
-            <img src="a.JPG" alt="Brpmailo">
+            <img src="a.jpg" alt="Brpmailo">
             <h1>Brp Mailo</h1>
         </div>
         <h2>About Me</h2>
@@ -173,6 +200,12 @@ I strongly believe in discipline and integrity, especially in education, and I d
         </div>
 
 
+
+
+
+
+
+
 <h3>Social Links</h3>
 <div class="social-links">
     <a href="http://www.youtube.com/@brpmailo" target="_blank"><i class="fab fa-youtube"></i></a>
@@ -182,6 +215,16 @@ I strongly believe in discipline and integrity, especially in education, and I d
     <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
 </div>
    </section>
+
+
+<h2>My Potrfolio</h2>
+    <div class="portfolio">
+            <div class="portfolio-item" onclick="openSite('https://phuyalnabin.com.np')">
+                <img src="n.JPG" alt="Website 2">
+                <p>My Brothers</p>
+            </div>
+        </div>
+    </div>
 
 
     <section id="contact">
@@ -196,6 +239,9 @@ I strongly believe in discipline and integrity, especially in education, and I d
             <input type="submit" value="Submit">
         </form>
     </section>
+
+
+
 
     <footer>
         <p>&copy; 2025 Designer All rights reserved.</p>
@@ -214,6 +260,9 @@ I strongly believe in discipline and integrity, especially in education, and I d
                 nepaliInfo.classList.toggle("hidden");
                 englishInfo.classList.add("hidden");
             }
+        }
+ function openSite(url) {
+            window.open(url, "_blank");
         }
     </script>
 </body>
