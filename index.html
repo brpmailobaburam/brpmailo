@@ -204,8 +204,53 @@
 
 
 
+<style>
+.option-container {
+  display: flex;
+  gap: 10px;  /* बटनहरू बीचको space घटाएँ */
+  margin-top: 10px;
+  justify-content: flex-start; /* बायाँबाट सुरु */
+  align-items: center; /* height सँग align */
+  }
+
+  .circle-btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    font-weight: bold;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+
+  .circle-btn:hover {
+    transform: scale(1.1);
+  }
+
+  .yes-btn {
+    background-color: #28a745;
+  }
+
+  .no-btn {
+    background-color: #dc3545;
+  }
+
+  #formContainer {
+    display: none;
+    margin-top: 30px;
+  }
+
     </style>
 </head>
+
+
+
+
+
+
+
 <body>
     <header>
         <h1> About Me</h1>
@@ -321,12 +366,24 @@ HTML, CSS, JavaScript, र रिस्पोन्सिभ वेब डिज
 
 
     <section id="contact">
-    <h2><span style="color: maroon;">Contact Me</span></h2>
+    <h2><span style="color: maroon;">Contact for Brpmailo</span></h2>
     <p>📞 Phone: +977-9844078996</p>
     <p>📧 Email: brpmailobaburam@gmail.com</p>
     
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSftW09ExCeiHjB2to6Ham-jhM226BaAZ44MdwNLsN-eyqytiQ/viewform?embedded=true" width="640" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
+<h2>Do you want to directly contact Brpmailo?</h2>
+
+<div class="option-container">
+  <button class="circle-btn yes-btn" onclick="toggleForm('yes')">Yes</button>
+  <button class="circle-btn no-btn" onclick="toggleForm('no')">No</button>
+</div>
+
+<div id="formContainer">
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSftW09ExCeiHjB2to6Ham-jhM226BaAZ44MdwNLsN-eyqytiQ/viewform?embedded=true"
+          width="100%" height="1200" frameborder="0" marginheight="0" marginwidth="0">
+    Loading…
+  </iframe>
+</div>
 </section>
 
 
@@ -336,6 +393,22 @@ HTML, CSS, JavaScript, र रिस्पोन्सिभ वेब डिज
         <p>&copy; 2025 Designer All rights reserved</p>
         <p>Website Design by <a href="https://baburamphuyal.com.np" target="_blank">Brpmailo</a></p>
     </footer>
+
+
+
+
+
+
+<script>
+  function toggleForm(choice) {
+    const formContainer = document.getElementById("formContainer");
+    if (choice === 'yes') {
+      formContainer.style.display = "block";
+    } else {
+      formContainer.style.display = "none";
+    }
+  }
+</script>
 
 
 
