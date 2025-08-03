@@ -1,107 +1,5 @@
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -215,33 +113,61 @@
         .social-links a:hover {
             color: blue;
         }
-        .portfolio {
-            padding: 20px;
-        }
-        .portfolio-items {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-        .portfolio-item {
-            width: 250px;
-            text-align: center;
-            cursor: pointer;
-        }
-        .portfolio-item img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-            transition: transform 0.3s ease;
-        }
-        .portfolio-item img:hover {
-            transform: scale(1.1);
-        }
-        .portfolio-item p {
-            font-size: 16px;
-            margin-top: 5px;
-        }
+   
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .portfolio-item {
+    width: 100%;
+    max-width: 300px;
+    border: 3px solid #ccc;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    background-color: #fdfdfd;
+  }
+
+  .portfolio-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+
+  .portfolio-item h3 {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: maroon;
+  }
+
+  .portfolio-item p {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  .visit-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+  }
+
+  .visit-button:hover {
+    background-color: #0056b3;
+  }
+
+
+
     .subscriber-counter {
         font-size: 30px;
         font-weight: bold;
@@ -308,7 +234,6 @@
 
 
 
-<style>
 .option-container {
   display: flex;
   gap: 10px; 
@@ -452,17 +377,73 @@ HTML, CSS, JavaScript, र रिस्पोन्सिभ वेब डिज
 
 
 <section id="portfolio">
-    <h2><span style="color: maroon;">My Work</span></h2>
-    <div class="portfolio">
-        <div class="portfolio-item" onclick="openSite('https://phuyalnabin.com.np')">
-            <img src="n.jpg" alt="Website 2">
-            <p>My Brothers</p>
-        </div>
+  <h2><span style="color: maroon;">My Work</span></h2>
+  <div class="portfolio">
+
+    <div class="portfolio-item">
+      <h3>Nabin Phuyal</h3>
+      <img src="n.jpg" alt="Website 1">
+      <p>Official Website From Nabin Phuyal</p>
+      <a class="visit-button" href="https://phuyalnabin.com.np" target="_blank">Visit Site</a>
     </div>
-    <div class="subscriber-counter">
-        <p>+ Subscribers: <span id="subscriber-count">50</span></p>
+
+    <div class="portfolio-item">
+      <h3>Baburam Phuyal</h3>
+      <img src="1.jpg" alt="Website 2">
+      <p>Official Website From Brp Mailo Company</p>
+      <a class="visit-button" href="https://baburamphuyal.com.np" target="_blank">Visit Site</a>
     </div>
+
+    <div class="portfolio-item">
+      <h3>Sahityik Section</h3>
+      <img src="2.jpg" alt="Website 3">
+      <p>Literary site hosted by Brp Mailo Company</p>
+      <a class="visit-button" href="https://baburamphuyal.com.np/sahitik.html" target="_blank">Visit Site</a>
+    </div>
+
+    <div class="portfolio-item">
+      <h3>Educational Notes</h3>
+      <img src="3.jpg" alt="Website 4">
+      <p>Notes and textbooks for students</p>
+      <a class="visit-button" href="https://baburamphuyal.com.np/saikshik.html" target="_blank">Visit Site</a>
+    </div>
+
+    <div class="portfolio-item">
+      <h3>Quiz Section</h3>
+      <img src="4.jpg" alt="Website 5">
+      <p>General knowledge quiz portal hosted by Brp Mailo Company</p>
+      <a class="visit-button" href="https://baburamphuyal.com.np/quiz%20section.html" target="_blank">Visit Site</a>
+    </div>
+
+    <div class="portfolio-item">
+      <h3>Teacher Profile</h3>
+      <img src="5.jpg" alt="Website 6">
+      <p>About teaching staff and their roles</p>
+      <a class="visit-button" href="https://baburamphuyal.com.np/teacher.html" target="_blank">Visit Site</a>
+    </div>
+
+    <div class="portfolio-item">
+      <h3>Login Page</h3>
+      <img src="6.jpg" alt="Website 7">
+      <p>Secure login for users and admins from your school</p>
+      <a class="visit-button" href="https://baburamphuyal.com.np/login.html" target="_blank">Visit Site</a>
+    </div>
+
+    <div class="portfolio-item">
+      <h3>Computer Notes</h3>
+      <img src="7.jpg" alt="Website 8">
+      <p>Computer science study materials</p>
+      <a class="visit-button" href="https://baburamphuyal.com.np/computer.html" target="_blank">Visit Site</a>
+    </div>
+
+  </div>
 </section>
+
+
+
+     
+
+
 <div id="backToTop" onclick="scrollToTop()">&#8679;</div>
 
 
@@ -482,6 +463,8 @@ HTML, CSS, JavaScript, र रिस्पोन्सिभ वेब डिज
   <button class="circle-btn no-btn" onclick="toggleForm('no')">No</button>
 </div>
 
+
+
 <div id="formContainer">
   <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSftW09ExCeiHjB2to6Ham-jhM226BaAZ44MdwNLsN-eyqytiQ/viewform?embedded=true"
           width="100%" height="1200" frameborder="0" marginheight="0" marginwidth="0">
@@ -493,9 +476,11 @@ HTML, CSS, JavaScript, र रिस्पोन्सिभ वेब डिज
 
 
 
+
+
     <footer>
         <p>&copy; 2025 Designer All rights reserved</p>
-        <p>Website Design by <a href="https://baburamphuyal.com.np" target="_blank">Brpmailo</a></p>
+        <p>Website Design by <a href="#">Brpmailo</a></p>
     </footer>
 
 
@@ -513,6 +498,17 @@ HTML, CSS, JavaScript, र रिस्पोन्सिभ वेब डिज
     }
   }
 </script>
+
+
+
+<script>
+  function openSite(url) {
+    window.open(url, "_blank");
+  }
+</script>
+
+
+
 
 
 
